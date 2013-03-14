@@ -1,0 +1,18 @@
+[submodule "modules/apache"]
+	path = modules/apache
+	url = git://github.com/puppetlabs/puppetlabs-apache.git
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "modules/apt"]
+	path = modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
+[submodule "xhgui"]
+	path = xhgui
+	url = https://github.com/preinheimer/xhgui.git
+[submodule "modules/nginx"]
+	path = modules/nginx
+	url = https://github.com/davidwinter/puppet-nginx.git
+[submodule "modules/phpfpm"]
+	path = modules/phpfpm
+	url = https://github.com/davidwinter/puppet-phpfpm.git
