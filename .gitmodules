@@ -16,3 +16,6 @@
 [submodule "modules/phpfpm"]
 	path = modules/phpfpm
 	url = https://github.com/davidwinter/puppet-phpfpm.git
+[submodule "modules/mysql"]
+	path = modules/mysql
+	url = https://github.com/puppetlabs/puppetlabs-mysql.git
