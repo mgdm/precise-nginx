@@ -4,6 +4,10 @@ group { "puppet":
 
 class { 'apt': }
 
+exec { 'apt-get update':
+    command => "/usr/bin/apt-get update"
+}
+
 include phpPackages
 class phpPackages {
 	apt::ppa { 'ppa:ondrej/php5': }
@@ -52,8 +56,11 @@ package { 'apache2':
 	require => Service['apache2']
 }
 
-class { 'mysql': }
+class { 'mysql': 
+	require  => Exec['apt-get update']
+}
 
 class { 'mysql::server': 
-	config_hash => { 'root_password' => 'helloiamroot' }
+	config_hash => { 'root_password' => 'helloiamroot' },
+	require  => Exec['apt-get update']
 }
